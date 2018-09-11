@@ -29,13 +29,13 @@
         </div>
         <div class='panel-footer'>
             <div class='text-right'>
-                <input type="hidden" name='editing' value="{{editing}}">
-                <input type="hidden" name='id' value="{{id}}">
                 <input name='cancel' type="submit" value="Cancel" class="btn btn-danger" formaction={{back}}>
                 {% if not editing %}
                 <input type="submit" value="Post" class="btn btn-success">
                 {% else %}
                 
+                <input type="hidden" name='id' value="{{id}}">
+                <input type="hidden" name='editing' value="{{editing}}">
                 <input type="submit" value="Update" class="btn btn-success">
                 {% endif %}
             </div>
